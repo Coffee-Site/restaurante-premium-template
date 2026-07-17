@@ -7,6 +7,7 @@
 <meta name="description" content="Template Premium para restaurantes.">
 
 <!-- PWA / Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/images/favicon/favicon.ico">
 <link rel="apple-touch-icon" href="assets/images/icons/icon-192x192.png">
@@ -60,144 +61,207 @@
 <section id="galeria"><div class="container"><h2 class="section-title">Galeria</h2><div class="grid"></div></div></section>
 <section id="depoimentos"><div class="container"><h2 class="section-title">Avaliações</h2><div class="grid"></div></div></section>
 <section id="faq"><div class="container"><h2 class="section-title">Perguntas Frequentes</h2><div id="faq-list"></div></div></section>
-<section id="contato">
+<section id="contato" class="contact-section">
+
     <div class="container">
 
-        <h2 class="section-title">Entre em Contato</h2>
-        <p class="section-subtitle">
-            Estamos prontos para receber você. Faça sua reserva ou entre em contato pelos canais abaixo.
-        </p>
+        <div class="section-header">
 
-        <div class="contact-wrapper">
+            <h2 class="section-title">
+                Entre em Contato
+            </h2>
 
-            <!-- Informações -->
-            <div class="contact-info">
+            <p class="section-subtitle">
+                Será um prazer receber você. Faça sua reserva ou fale conosco através dos canais abaixo.
+            </p>
 
-                <div class="contact-card">
-                    <div class="contact-icon">📞</div>
-                    <div>
-                        <h3>Telefone</h3>
-                        <p id="contact-phone">+55 (11) 99999-9999</p>
+        </div>
+
+        <div class="contact-layout">
+
+            <!-- ========================= -->
+            <!-- COLUNA ESQUERDA -->
+            <!-- ========================= -->
+
+            <div class="contact-grid">
+
+                <!-- Telefone -->
+
+                <article class="contact-card">
+
+                    <div class="contact-card-icon">
+    <i class="fa-solid fa-phone"></i>
+</div>
+
+                    <div class="contact-card-content">
+
+                        <span class="contact-label">
+                            TELEFONE
+                        </span>
+
+                        <a
+                            id="contact-phone"
+                            class="contact-value"
+                            href="#">
+                            +55 (11) 99999-9999
+                        </a>
+
                     </div>
-                </div>
 
-                <div class="contact-card">
-                    <div class="contact-icon">💬</div>
-                    <div>
-                        <h3>WhatsApp</h3>
+                </article>
+
+                <!-- WhatsApp -->
+
+                <article class="contact-card">
+
+                    <div class="contact-card-icon">
+    <i class="fa-brands fa-whatsapp"></i>
+</div>
+
+                    <div class="contact-card-content">
+
+                        <span class="contact-label">
+                            WHATSAPP
+                        </span>
+
                         <a
                             id="contact-whatsapp"
+                            class="contact-value"
                             href="#"
                             target="_blank"
                             rel="noopener">
+
                             Conversar agora
+
                         </a>
+
                     </div>
-                </div>
 
-                <div class="contact-card">
-                    <div class="contact-icon">✉️</div>
-                    <div>
-                        <h3>E-mail</h3>
-                        <a id="contact-email" href="#">
-                            contato@empresa.com.br
-                        </a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <div>
-                        <h3>Endereço</h3>
+                <!-- Endereço -->
 
-                        <p id="contact-address-line1">
+                <article class="contact-card">
+
+                    <div class="contact-card-icon">
+    <i class="fa-solid fa-location-dot"></i>
+</div>
+
+                    <div class="contact-card-content">
+
+                        <span class="contact-label">
+                            ENDEREÇO
+                        </span>
+
+                        <p
+                            id="contact-address-line1"
+                            class="contact-value">
                             Av. das Palmeiras, 1234
                         </p>
 
-                        <p id="contact-address-line2">
+                        <p
+                            id="contact-address-line2"
+                            class="contact-small">
                             Jardim das Flores
                         </p>
 
-                        <p id="contact-address-line3">
+                        <p
+                            id="contact-address-line3"
+                            class="contact-small">
                             São Paulo - SP
                         </p>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">🕒</div>
-                    <div>
-
-                        <h3>Horário de Funcionamento</h3>
-
-                        <div id="business-hours">
-                            <!-- preenchido automaticamente -->
-                        </div>
 
                     </div>
-                </div>
 
-                <div class="contact-card">
+                </article>
 
-                    <div class="contact-icon">🌐</div>
+                <!-- Funcionamento -->
 
-                    <div>
+                <article class="contact-card">
 
-                        <h3>Redes Sociais</h3>
+                    <div class="contact-card-icon">
+    <i class="fa-regular fa-clock"></i>
+</div>
 
-                        <div class="social-links">
+                    <div class="contact-card-content">
 
-                            <a
-                                id="instagram-link"
-                                href="#"
-                                target="_blank"
-                                rel="noopener">
-                                Instagram
-                            </a>
+                        <span class="contact-label">
+                            FUNCIONAMENTO
+                        </span>
 
-                            <a
-                                id="facebook-link"
-                                href="#"
-                                target="_blank"
-                                rel="noopener">
-                                Facebook
-                            </a>
-
-                            <a
-                                id="tiktok-link"
-                                href="#"
-                                target="_blank"
-                                rel="noopener">
-                                TikTok
-                            </a>
-
-                            <a
-                                id="youtube-link"
-                                href="#"
-                                target="_blank"
-                                rel="noopener">
-                                YouTube
-                            </a>
-
+                        <div
+                            id="business-hours"
+                            class="contact-hours">
                         </div>
 
                     </div>
 
-                </div>
+                </article>
 
             </div>
 
-            <!-- Mapa -->
+            <!-- ========================= -->
+            <!-- COLUNA DIREITA -->
+            <!-- ========================= -->
 
-            <div class="contact-map">
+            <div class="contact-map-wrapper">
 
                 <div id="mapa"></div>
+
+                <div class="social-bar">
+
+                    <a
+                        id="instagram-link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a
+                        id="facebook-link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a
+                        id="tiktok-link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="TikTok">
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+                    <a
+                        id="youtube-link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
+
 </section>
 </main>
 
