@@ -60,6 +60,7 @@
     if (!container) return;
 
     const horarios = this.empresa.horarioFuncionamento;
+    console.log(horarios);
 
     if (!horarios || !horarios.length)
         return;
