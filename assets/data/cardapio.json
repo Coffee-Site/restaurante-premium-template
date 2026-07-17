@@ -1,0 +1,127 @@
+{
+  "categorias": [
+    {
+      "id": "entradas",
+      "nome": "Entradas",
+      "itens": [
+        {
+          "id": "ent-01",
+          "nome": "Carpaccio de Filé Mignon",
+          "descricao": "Finas fatias de filé mignon, lascas de parmesão, alcaparras e molho de mostarda dijon.",
+          "preco": 42.9,
+          "imagem": "assets/images/pratos/carpaccio.webp",
+          "tags": ["mais pedido"],
+          "destaque": true
+        },
+        {
+          "id": "ent-02",
+          "nome": "Bruschetta Tradicional",
+          "descricao": "Pão italiano tostado, tomate confit, manjericão fresco e azeite extra virgem.",
+          "preco": 28.5,
+          "imagem": "assets/images/pratos/bruschetta.webp",
+          "tags": ["vegetariano"],
+          "destaque": false
+        },
+        {
+          "id": "ent-03",
+          "nome": "Camarão na Manteiga",
+          "descricao": "Camarões salteados na manteiga com alho, ervas finas e toque de limão siciliano.",
+          "preco": 58.0,
+          "imagem": "assets/images/pratos/camarao-manteiga.webp",
+          "tags": [],
+          "destaque": false
+        }
+      ]
+    },
+    {
+      "id": "pratos-principais",
+      "nome": "Pratos Principais",
+      "itens": [
+        {
+          "id": "prat-01",
+          "nome": "Risoto de Funghi",
+          "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos e parmesão envelhecido 24 meses.",
+          "preco": 68.9,
+          "imagem": "assets/images/pratos/risoto-funghi.webp",
+          "tags": ["vegetariano", "mais pedido"],
+          "destaque": true
+        },
+        {
+          "id": "prat-02",
+          "nome": "Filé ao Molho Madeira",
+          "descricao": "Medalhão de filé mignon grelhado, molho madeira artesanal e purê de batatas trufado.",
+          "preco": 89.9,
+          "imagem": "assets/images/pratos/file-madeira.webp",
+          "tags": ["mais pedido"],
+          "destaque": true
+        },
+        {
+          "id": "prat-03",
+          "nome": "Salmão Grelhado",
+          "descricao": "Salmão grelhado no ponto, legumes salteados e molho beurre blanc.",
+          "preco": 79.9,
+          "imagem": "assets/images/pratos/salmao-grelhado.webp",
+          "tags": [],
+          "destaque": false
+        },
+        {
+          "id": "prat-04",
+          "nome": "Massa Fresca ao Sugo",
+          "descricao": "Tagliatelle artesanal ao molho sugo de tomates italianos e manjericão.",
+          "preco": 54.9,
+          "imagem": "assets/images/pratos/massa-sugo.webp",
+          "tags": ["vegetariano"],
+          "destaque": false
+        }
+      ]
+    },
+    {
+      "id": "sobremesas",
+      "nome": "Sobremesas",
+      "itens": [
+        {
+          "id": "sob-01",
+          "nome": "Petit Gâteau",
+          "descricao": "Bolo de chocolate meio amargo com recheio cremoso e bola de sorvete de creme.",
+          "preco": 32.0,
+          "imagem": "assets/images/pratos/petit-gateau.webp",
+          "tags": ["mais pedido"],
+          "destaque": true
+        },
+        {
+          "id": "sob-02",
+          "nome": "Tiramisù Clássico",
+          "descricao": "Camadas de biscoito champagne, café espresso e creme mascarpone.",
+          "preco": 29.9,
+          "imagem": "assets/images/pratos/tiramisu.webp",
+          "tags": [],
+          "destaque": false
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "nome": "Bebidas",
+      "itens": [
+        {
+          "id": "beb-01",
+          "nome": "Suco Natural da Estação",
+          "descricao": "Preparado na hora, com frutas frescas selecionadas conforme a estação.",
+          "preco": 14.9,
+          "imagem": "assets/images/pratos/suco-natural.webp",
+          "tags": [],
+          "destaque": false
+        },
+        {
+          "id": "beb-02",
+          "nome": "Taça de Vinho Tinto",
+          "descricao": "Seleção de vinhos tintos importados, consulte o sommelier para harmonização.",
+          "preco": 38.0,
+          "imagem": "assets/images/pratos/vinho-tinto.webp",
+          "tags": [],
+          "destaque": false
+        }
+      ]
+    }
+  ]
+}

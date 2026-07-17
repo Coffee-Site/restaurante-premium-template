@@ -1,0 +1,257 @@
+/* ==========================================================================
+   COFFEE SITES PRO — COMPONENTS.CSS
+   Template: Restaurante Premium
+
+   Estilos dos componentes renderizados dinamicamente por content.js
+   (destaques, cardápio em abas, FAQ em acordeão, depoimentos) e por
+   map.js (bloco de mapa). Import order recomendada no <head>:
+   variables → style → components → responsive → animations.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CARD DE PRATO (destaques + cardápio completo)
+   -------------------------------------------------------------------------- */
+.dish-card{
+  display:flex;
+  flex-direction:column;
+}
+.dish-card-image{
+  aspect-ratio:4 / 3;
+  overflow:hidden;
+}
+.dish-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:var(--transition);
+}
+.dish-card:hover .dish-card-image img{
+  transform:scale(1.05);
+}
+.dish-card-body{
+  padding:var(--space-md);
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+.dish-card-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:var(--space-sm);
+}
+.dish-card-title{
+  font-family:var(--font-title);
+  font-size:var(--fs-h3);
+}
+.dish-card-price{
+  font-weight:700;
+  color:var(--color-primary-dark);
+  white-space:nowrap;
+}
+.dish-card-description{
+  color:var(--color-gray);
+  font-size:var(--fs-small);
+  line-height:1.6;
+}
+.dish-card-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem;
+  margin-top:.25rem;
+}
+.dish-tag{
+  display:inline-block;
+  padding:.25rem .75rem;
+  font-size:.75rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  color:var(--color-primary-dark);
+  background:rgba(200,155,60,.12);
+  border-radius:var(--radius-pill);
+}
+
+
+/* --------------------------------------------------------------------------
+   CARDÁPIO EM ABAS (#menu-content)
+   -------------------------------------------------------------------------- */
+.menu-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem;
+  margin-bottom:var(--space-lg);
+}
+.menu-tab{
+  padding:.75rem 1.5rem;
+  border-radius:var(--radius-pill);
+  border:2px solid var(--color-light);
+  background:var(--color-light);
+  color:var(--color-black);
+  font-weight:600;
+  font-size:var(--fs-small);
+  cursor:pointer;
+  transition:var(--transition);
+}
+.menu-tab:hover{
+  border-color:var(--color-primary);
+}
+.menu-tab.is-active{
+  background:var(--color-primary);
+  border-color:var(--color-primary);
+  color:#fff;
+}
+
+.menu-panel{
+  display:none;
+}
+.menu-panel.is-active{
+  display:block;
+  animation:menu-panel-fade .35s ease;
+}
+
+@keyframes menu-panel-fade{
+  from{ opacity:0; transform:translateY(8px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
+
+/* --------------------------------------------------------------------------
+   FAQ EM ACORDEÃO (#faq-list) — baseado em <details>/<summary> nativos
+   -------------------------------------------------------------------------- */
+.faq-item{
+  background:var(--color-light);
+  border-radius:var(--radius-md);
+  padding:var(--space-sm) var(--space-md);
+  margin-bottom:1rem;
+  transition:var(--transition);
+}
+.faq-item[open]{
+  background:#fff;
+  box-shadow:var(--shadow-soft);
+}
+.faq-question{
+  cursor:pointer;
+  font-weight:600;
+  font-size:1.05rem;
+  padding:.5rem 0;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--space-sm);
+}
+.faq-question::-webkit-details-marker{
+  display:none;
+}
+.faq-question::after{
+  content:"+";
+  font-size:1.4rem;
+  color:var(--color-primary);
+  transition:var(--transition);
+  flex-shrink:0;
+}
+.faq-item[open] .faq-question::after{
+  content:"–";
+}
+.faq-answer{
+  color:var(--color-gray);
+  line-height:1.7;
+  padding:.5rem 0 .75rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   DEPOIMENTOS (#depoimentos .grid)
+   -------------------------------------------------------------------------- */
+.testimonial-card{
+  padding:var(--space-md);
+  display:flex;
+  flex-direction:column;
+  gap:var(--space-sm);
+}
+.testimonial-header{
+  display:flex;
+  align-items:center;
+  gap:var(--space-sm);
+}
+.testimonial-photo{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+.testimonial-name{
+  font-family:var(--font-title);
+  font-size:1.1rem;
+}
+.testimonial-stars{
+  color:var(--color-primary);
+  letter-spacing:.1em;
+}
+.testimonial-text{
+  color:var(--color-gray);
+  font-style:italic;
+  line-height:1.7;
+}
+.testimonial-source{
+  font-size:var(--fs-small);
+  color:var(--color-gray);
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+
+
+/* --------------------------------------------------------------------------
+   BLOCO DE MAPA (#mapa) — gerado por map.js
+   -------------------------------------------------------------------------- */
+#mapa{
+  display:flex;
+  flex-direction:column;
+  gap:var(--space-md);
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+}
+.map-wrapper{
+  width:100%;
+  aspect-ratio:16 / 9;
+}
+.map-frame{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.map-info{
+  padding:var(--space-md);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--space-sm);
+  background:var(--color-light);
+}
+.map-address{
+  line-height:1.6;
+}
+.map-reference{
+  color:var(--color-gray);
+  font-size:var(--fs-small);
+}
+
+
+/* --------------------------------------------------------------------------
+   AJUSTES RESPONSIVOS BÁSICOS (refinados também em responsive.css)
+   -------------------------------------------------------------------------- */
+@media (max-width:575px){
+  .dish-card-header{
+    flex-direction:column;
+    gap:.25rem;
+  }
+  .map-info{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}

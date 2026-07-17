@@ -1,0 +1,43 @@
+/* Coffee Sites Pro - Design Tokens */
+:root{
+  --color-primary:#C89B3C;
+  --color-primary-dark:#A97F29;
+  --color-black:#111111;
+  --color-dark:#1C1C1C;
+  --color-gray:#666666;
+  --color-light:#F7F7F7;
+  --color-white:#FFFFFF;
+  --color-success:#2E8B57;
+  --color-danger:#D62828;
+
+  --font-title:"Playfair Display", Georgia, serif;
+  --font-text:"Poppins", Arial, sans-serif;
+
+  --fs-hero:clamp(2.8rem,5vw,4.5rem);
+  --fs-h1:clamp(2.2rem,4vw,3.5rem);
+  --fs-h2:clamp(1.8rem,3vw,2.5rem);
+  --fs-h3:1.5rem;
+  --fs-text:1rem;
+  --fs-small:.875rem;
+
+  --space-xs:.5rem;
+  --space-sm:1rem;
+  --space-md:1.5rem;
+  --space-lg:3rem;
+  --space-xl:5rem;
+  --space-xxl:7rem;
+
+  --radius-sm:8px;
+  --radius-md:16px;
+  --radius-lg:24px;
+  --radius-pill:999px;
+
+  --shadow-soft:0 8px 24px rgba(0,0,0,.08);
+  --shadow-medium:0 16px 40px rgba(0,0,0,.12);
+  --shadow-large:0 24px 60px rgba(0,0,0,.18);
+
+  --transition:all .3s ease;
+  --container:1200px;
+  --header-height:80px;
+  --z-header:1000;
+}

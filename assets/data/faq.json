@@ -1,0 +1,34 @@
+{
+  "perguntas": [
+    {
+      "id": "faq-01",
+      "pergunta": "É necessário fazer reserva antecipada?",
+      "resposta": "Recomendamos reservar com pelo menos 1 dia de antecedência, especialmente às sextas, sábados e feriados, quando a casa costuma lotar. Você pode reservar diretamente pelo WhatsApp clicando no botão flutuante ou no botão \"Reservar Mesa\"."
+    },
+    {
+      "id": "faq-02",
+      "pergunta": "O restaurante possui opções vegetarianas?",
+      "resposta": "Sim! Temos diversas opções vegetarianas em todas as categorias do cardápio, identificadas com a tag \"vegetariano\". Também preparamos pratos sob consulta para outras restrições alimentares."
+    },
+    {
+      "id": "faq-03",
+      "pergunta": "Há estacionamento disponível no local?",
+      "resposta": "Sim, contamos com manobrista próprio de terça a domingo, a partir das 18h durante a semana e a partir do almoço aos finais de semana."
+    },
+    {
+      "id": "faq-04",
+      "pergunta": "O espaço é adequado para eventos privados?",
+      "resposta": "Sim, dispomos de um salão reservado para eventos corporativos, aniversários e celebrações especiais, com cardápio personalizável. Entre em contato pelo WhatsApp para verificar disponibilidade e valores."
+    },
+    {
+      "id": "faq-05",
+      "pergunta": "Quais são as formas de pagamento aceitas?",
+      "resposta": "Aceitamos cartões de crédito e débito das principais bandeiras, Pix e dinheiro. Não trabalhamos com cheques."
+    },
+    {
+      "id": "faq-06",
+      "pergunta": "Vocês atendem crianças e possuem cardápio infantil?",
+      "resposta": "Sim, o ambiente é family friendly e contamos com opções específicas para o público infantil. Consulte nossa equipe no momento da reserva."
+    }
+  ]
+}

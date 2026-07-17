@@ -1,0 +1,69 @@
+{
+  "nome": "Restaurante Premium",
+  "slogan": "Sabores que transformam momentos.",
+  "descricaoCurta": "Culinária artesanal preparada com ingredientes selecionados, em um ambiente elegante e acolhedor.",
+  "descricaoLonga": "Há anos servindo pratos autorais que unem técnica, tradição e ingredientes frescos. Nosso compromisso é transformar cada refeição em uma experiência memorável, do primeiro ao último detalhe.",
+
+  "logo": "assets/images/logo/logo.svg",
+  "logoAlt": "assets/images/logo/logo-alt.svg",
+  "favicon": "assets/images/favicon/favicon.ico",
+
+  "contato": {
+    "telefone": "+55 (11) 99999-9999",
+    "telefoneLink": "5511999999999",
+    "email": "contato@restaurantepremium.com.br",
+    "whatsapp": "5511999999999",
+    "whatsappMensagemPadrao": "Olá! Gostaria de fazer uma reserva no Restaurante Premium."
+  },
+
+  "endereco": {
+    "logradouro": "Av. das Palmeiras, 1234",
+    "bairro": "Jardim das Flores",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "01234-567",
+    "pais": "Brasil",
+    "referencia": "Próximo ao Parque das Palmeiras",
+    "latitude": -23.5505,
+    "longitude": -46.6333,
+    "googleMapsUrl": "https://maps.google.com/?q=-23.5505,-46.6333"
+  },
+
+  "horarioFuncionamento": [
+    { "dia": "Segunda-feira", "abertura": null, "fechamento": null, "fechado": true },
+    { "dia": "Terça-feira", "abertura": "18:00", "fechamento": "23:00", "fechado": false },
+    { "dia": "Quarta-feira", "abertura": "18:00", "fechamento": "23:00", "fechado": false },
+    { "dia": "Quinta-feira", "abertura": "18:00", "fechamento": "23:00", "fechado": false },
+    { "dia": "Sexta-feira", "abertura": "18:00", "fechamento": "00:00", "fechado": false },
+    { "dia": "Sábado", "abertura": "12:00", "fechamento": "00:00", "fechado": false },
+    { "dia": "Domingo", "abertura": "12:00", "fechamento": "17:00", "fechado": false }
+  ],
+
+  "redesSociais": {
+    "instagram": "https://instagram.com/restaurantepremium",
+    "facebook": "https://facebook.com/restaurantepremium",
+    "tiktok": "https://tiktok.com/@restaurantepremium",
+    "youtube": ""
+  },
+
+  "avaliacoes": {
+    "notaMedia": 4.8,
+    "totalAvaliacoes": 312,
+    "googlePlaceId": ""
+  },
+
+  "seo": {
+    "tituloPagina": "Restaurante Premium | Culinária Artesanal em São Paulo",
+    "metaDescricao": "Restaurante Premium: culinária artesanal, ambiente elegante e ingredientes selecionados. Reserve sua mesa em São Paulo.",
+    "metaKeywords": "restaurante premium, restaurante são paulo, culinária artesanal, reserva de mesa, gastronomia",
+    "canonical": "https://www.restaurantepremium.com.br/",
+    "ogImage": "assets/images/hero/hero.webp",
+    "schemaType": "Restaurant"
+  },
+
+  "analytics": {
+    "googleAnalyticsId": "",
+    "googleSearchConsole": "",
+    "metaPixelId": ""
+  }
+}

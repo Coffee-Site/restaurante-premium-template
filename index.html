@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante Premium | Coffee Sites Pro</title>
+<meta name="description" content="Template Premium para restaurantes.">
+
+<!-- PWA / Ícones -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/images/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="assets/images/icons/icon-192x192.png">
+<meta name="theme-color" content="#C89B3C">
+
+<!-- Estilos: ordem importa (tokens → base → componentes → responsivo → animações) -->
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">Coffee Sites Pro</a>
+      <ul class="menu">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn" href="#" data-whatsapp-msg="Olá! Gostaria de fazer uma reserva no Restaurante Premium.">Reservar Mesa</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="hero" class="hero">
+<div class="container hero-grid">
+<div>
+<h1>Sabores que transformam momentos.</h1>
+<p>Culinária artesanal preparada com ingredientes selecionados.</p>
+<div class="hero-buttons">
+<a class="btn" href="#cardapio">Ver Cardápio</a>
+<a class="btn btn-outline" href="#" data-whatsapp-msg="Olá! Gostaria de fazer uma reserva no Restaurante Premium.">Reservar Mesa</a>
+</div>
+</div>
+<div class="hero-image">
+<img src="assets/images/hero/hero.png" alt="Prato principal">
+</div>
+</div>
+</section>
+
+<section id="sobre"><div class="container"><h2 class="section-title">Nossa História</h2><p class="section-subtitle">Conte aqui a história do restaurante.</p></div></section>
+<section id="destaques"><div class="container"><h2 class="section-title">Pratos em Destaque</h2><div class="grid"></div></div></section>
+<section id="cardapio"><div class="container"><h2 class="section-title">Cardápio</h2><div id="menu-content"></div></div></section>
+<section id="galeria"><div class="container"><h2 class="section-title">Galeria</h2><div class="grid"></div></div></section>
+<section id="depoimentos"><div class="container"><h2 class="section-title">Avaliações</h2><div class="grid"></div></div></section>
+<section id="faq"><div class="container"><h2 class="section-title">Perguntas Frequentes</h2><div id="faq-list"></div></div></section>
+<section id="contato"><div class="container"><h2 class="section-title">Contato</h2><div id="mapa"></div></div></section>
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2026 Coffee Sites Pro.</p>
+</div>
+</footer>
+
+<!-- Scripts: main.js primeiro (núcleo), demais módulos em seguida -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/whatsapp.js"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/map.js"></script>
+</body>
+</html>

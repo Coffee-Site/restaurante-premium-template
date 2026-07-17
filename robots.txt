@@ -1,0 +1,13 @@
+# Coffee Sites Pro — Restaurante Premium
+# robots.txt
+
+User-agent: *
+Allow: /
+
+# Bloqueia apenas os dados brutos em JSON, que não têm valor de indexação.
+# CSS e JS permanecem liberados de propósito: o Google precisa rastreá-los
+# para renderizar a página corretamente e avaliar mobile-friendliness/CWV.
+Disallow: /data/
+
+# Sitemap
+Sitemap: https://www.restaurantepremium.com.br/sitemap.xml
