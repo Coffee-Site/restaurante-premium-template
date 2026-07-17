@@ -65,25 +65,26 @@
     if (!horarios || !horarios.length)
         return;
 
-    const resumo = [];
+    container.innerHTML = "";
 
-    horarios.forEach((dia) => {
+horarios.forEach((dia) => {
 
-        if (dia.fechado)
-            return;
+    const div = document.createElement("div");
 
-        resumo.push(
-            `<div class="hour-item">
-                <strong>${dia.dia.substring(0,3)}</strong>
-                <span>${dia.abertura} às ${dia.fechamento}</span>
-            </div>`
-        );
+    div.className = "hour-item";
 
-    });
-    console.log(resumo);
-    container.innerHTML = resumo.join("");
+    div.innerHTML = `
+        <strong>${dia.dia.substring(0,3)}</strong>
+        <span>${
+            dia.fechado
+            ? "Fechado"
+            : `${dia.abertura} às ${dia.fechamento}`
+        }</span>
+    `;
 
-}
+    container.appendChild(div);
+
+});
 
        preencherContato() {
 
@@ -211,6 +212,6 @@
         return;
 
     this.preencherContato();
-    this.renderHorario();
+    
 
 }
