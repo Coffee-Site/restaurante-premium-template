@@ -1,16 +1,3 @@
-/* ==========================================================================
-   COFFEE SITES PRO — CONTACT.JS
-   Template: Restaurante Premium
-
-   Responsabilidade:
-   Carregar automaticamente os dados de contato da empresa através do
-   arquivo assets/data/empresa.json e preencher a seção CONTATO.
-
-   Desenvolvido para ser reutilizado em qualquer template da
-   Coffee Sites Pro.
-
-   ========================================================================== */
-
 (() => {
     "use strict";
 
@@ -24,8 +11,9 @@
 
         empresa: null,
 
-        setText(id, value) {
-            const el = qs(id);
+        setText(selector, value) {
+
+            const el = qs(selector);
 
             if (!el || value === undefined || value === null || value === "")
                 return;
@@ -33,185 +21,118 @@
             el.textContent = value;
         },
 
-        setLink(id, href, text = null) {
+        setLink(selector, href, text = null) {
 
-    const el = qs(id);
+            const el = qs(selector);
 
-    if (!el) return;
+            if (!el) return;
 
-    if (!href || href === "#") {
+            if (!href || href === "#") {
+                el.style.display = "none";
+                return;
+            }
 
-        el.style.display = "none";
-        return;
+            el.href = href;
 
-    }
-
-    el.href = href;
-
-    if (text)
-        el.textContent = text;
-
-}
+            if (text)
+                el.textContent = text;
+        },
 
         renderHorario() {
 
-    const container = qs("#business-hours");
+            const container = qs("#business-hours");
 
-    if (!container) return;
+            if (!container) return;
 
-    const horarios = this.empresa.horarioFuncionamento;
-    console.log(horarios);
+            const horarios = this.empresa?.horarioFuncionamento;
 
-    if (!horarios || !horarios.length)
-        return;
+            if (!horarios || !horarios.length) return;
 
-    container.innerHTML = "";
+            container.innerHTML = "";
 
-horarios.forEach((dia) => {
+            horarios.forEach((dia) => {
 
-    const div = document.createElement("div");
+                const item = document.createElement("div");
 
-    div.className = "hour-item";
+                item.className = "hour-item";
 
-    div.innerHTML = `
-        <strong>${dia.dia.substring(0,3)}</strong>
-        <span>${
-            dia.fechado
-            ? "Fechado"
-            : `${dia.abertura} às ${dia.fechamento}`
-        }</span>
-    `;
+                item.innerHTML = `
+                    <strong>${dia.dia.substring(0,3)}</strong>
+                    <span>${
+                        dia.fechado
+                        ? "Fechado"
+                        : `${dia.abertura} às ${dia.fechamento}`
+                    }</span>
+                `;
 
-    container.appendChild(div);
+                container.appendChild(item);
 
-});
+            });
 
-       preencherContato() {
+        },
 
-    const contato = this.empresa.contato;
-    const endereco = this.empresa.endereco;
-    const redes = this.empresa.redesSociais;
+        preencherContato() {
 
-    // ----------------------------
-    // Telefone
-    // ----------------------------
+            const contato = this.empresa.contato;
+            const endereco = this.empresa.endereco;
+            const redes = this.empresa.redesSociais;
 
-    this.setLink(
+            this.setLink(
+                "#contact-phone",
+                `tel:${contato.telefoneLink}`,
+                contato.telefone
+            );
 
-        "#contact-phone",
+            this.setLink(
+                "#contact-whatsapp",
+                `https://wa.me/${contato.whatsapp}?text=${encodeURIComponent(contato.whatsappMensagemPadrao)}`,
+                "Conversar pelo WhatsApp"
+            );
 
-        `tel:${contato.telefoneLink}`,
+            this.setText("#contact-address-line1", endereco.logradouro);
+            this.setText("#contact-address-line2", endereco.bairro);
+            this.setText(
+                "#contact-address-line3",
+                `${endereco.cidade} - ${endereco.estado}`
+            );
 
-        contato.telefone
+            const addressCard = qs("#contact-address-line1")?.closest(".contact-card");
 
-    );
+            if (addressCard && endereco.googleMapsUrl) {
 
-    // ----------------------------
-    // WhatsApp
-    // ----------------------------
+                addressCard.style.cursor = "pointer";
 
-    this.setLink(
+                addressCard.onclick = () => {
+                    window.open(endereco.googleMapsUrl, "_blank");
+                };
 
-        "#contact-whatsapp",
+            }
 
-        `https://wa.me/${contato.whatsapp}?text=${encodeURIComponent(contato.whatsappMensagemPadrao)}`,
+            this.setLink("#instagram-link", redes.instagram);
+            this.setLink("#facebook-link", redes.facebook);
+            this.setLink("#tiktok-link", redes.tiktok);
+            this.setLink("#youtube-link", redes.youtube);
 
-        "Conversar pelo WhatsApp"
+            this.renderHorario();
 
-    );
-
-    // ----------------------------
-    // Endereço
-    // ----------------------------
-
-    this.setText(
-
-        "#contact-address-line1",
-
-        endereco.logradouro
-
-    );
-
-    this.setText(
-
-        "#contact-address-line2",
-
-        endereco.bairro
-
-    );
-
-    this.setText(
-
-        "#contact-address-line3",
-
-        `${endereco.cidade} - ${endereco.estado}`
-
-    );
-
-    // Todo o card vira um link para o Google Maps
-
-    const addressCard = qs("#contact-address-line1")?.closest(".contact-card");
-
-    if (addressCard && endereco.googleMapsUrl) {
-
-        addressCard.style.cursor = "pointer";
-
-        addressCard.addEventListener("click", () => {
-
-            window.open(endereco.googleMapsUrl, "_blank");
-
-        });
-
-    }
-
-    // ----------------------------
-    // Redes sociais
-    // ----------------------------
-
-    this.setLink(
-
-        "#instagram-link",
-
-        redes.instagram
-
-    );
-
-    this.setLink(
-
-        "#facebook-link",
-
-        redes.facebook
-
-    );
-
-    this.setLink(
-
-        "#tiktok-link",
-
-        redes.tiktok
-
-    );
-
-    this.setLink(
-
-        "#youtube-link",
-
-        redes.youtube
-
-    );
-
-    this.renderHorario();
-
-}
+        },
 
         async init() {
 
-    this.empresa = await loadJSON("assets/data/empresa.json");
+            this.empresa = await loadJSON("assets/data/empresa.json");
 
-    if (!this.empresa)
-        return;
+            if (!this.empresa) return;
 
-    this.preencherContato();
-    
+            this.preencherContato();
 
-}
+        }
+
+    };
+
+    App.modules.contact = ContactModule;
+
+    if (document.readyState !== "loading") {
+        ContactModule.init();
+    }
+
+})();
