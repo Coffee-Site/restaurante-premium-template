@@ -9,7 +9,7 @@
           "nome": "Carpaccio de Filé Mignon",
           "descricao": "Finas fatias de filé mignon, lascas de parmesão, alcaparras e molho de mostarda dijon.",
           "preco": 42.9,
-          "imagem": "assets/images/pratos/carpaccio.webp",
+          "imagem": "assets/images/pratos/prato1.png",
           "tags": ["mais pedido"],
           "destaque": true
         },
@@ -18,7 +18,7 @@
           "nome": "Bruschetta Tradicional",
           "descricao": "Pão italiano tostado, tomate confit, manjericão fresco e azeite extra virgem.",
           "preco": 28.5,
-          "imagem": "assets/images/pratos/bruschetta.webp",
+          "imagem": "assets/images/pratos/prato2.png",
           "tags": ["vegetariano"],
           "destaque": false
         },
@@ -27,7 +27,7 @@
           "nome": "Camarão na Manteiga",
           "descricao": "Camarões salteados na manteiga com alho, ervas finas e toque de limão siciliano.",
           "preco": 58.0,
-          "imagem": "assets/images/pratos/camarao-manteiga.webp",
+          "imagem": "assets/images/pratos/prato3.png",
           "tags": [],
           "destaque": false
         }
@@ -42,7 +42,7 @@
           "nome": "Risoto de Funghi",
           "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos e parmesão envelhecido 24 meses.",
           "preco": 68.9,
-          "imagem": "assets/images/pratos/risoto-funghi.webp",
+          "imagem": "assets/images/pratos/prato4.png",
           "tags": ["vegetariano", "mais pedido"],
           "destaque": true
         },
@@ -51,7 +51,7 @@
           "nome": "Filé ao Molho Madeira",
           "descricao": "Medalhão de filé mignon grelhado, molho madeira artesanal e purê de batatas trufado.",
           "preco": 89.9,
-          "imagem": "assets/images/pratos/file-madeira.webp",
+          "imagem": "assets/images/pratos/prato5.png",
           "tags": ["mais pedido"],
           "destaque": true
         },
@@ -60,7 +60,7 @@
           "nome": "Salmão Grelhado",
           "descricao": "Salmão grelhado no ponto, legumes salteados e molho beurre blanc.",
           "preco": 79.9,
-          "imagem": "assets/images/pratos/salmao-grelhado.webp",
+          "imagem": "assets/images/pratos/prato6.png",
           "tags": [],
           "destaque": false
         },
