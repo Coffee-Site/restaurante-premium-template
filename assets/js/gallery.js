@@ -38,12 +38,12 @@
   // nenhum assets/data/galeria.json existir ainda. Ajuste os arquivos conforme
   // as fotos reais do cliente forem entrando em assets/images/galeria/.
   const GALLERY_FALLBACK = [
-    { src: "assets/images/galeria/01.png", alt: "Ambiente do restaurante" },
-    { src: "assets/images/galeria/02.png", alt: "Prato especial da casa" },
-    { src: "assets/images/galeria/03.png", alt: "Salão principal" },
-    { src: "assets/images/galeria/04.png", alt: "Detalhe da decoração" },
-    { src: "assets/images/galeria/05.png", alt: "Equipe em preparo" },
-    { src: "assets/images/galeria/06.png", alt: "Área externa" },
+    { src: "assets/images/galeria/01.jpeg", alt: "Ambiente do restaurante" },
+    { src: "assets/images/galeria/02.jpeg", alt: "Prato especial da casa" },
+    { src: "assets/images/galeria/03.jpeg", alt: "Salão principal" },
+    { src: "assets/images/galeria/04.jpeg", alt: "Detalhe da decoração" },
+    { src: "assets/images/galeria/05.jpeg", alt: "Equipe em preparo" },
+    { src: "assets/images/galeria/06.jpeg", alt: "Área externa" },
   ];
 
   const galleryModule = {
