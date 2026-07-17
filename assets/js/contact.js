@@ -80,7 +80,7 @@
         );
 
     });
-
+    console.log(resumo);
     container.innerHTML = resumo.join("");
 
 }
@@ -211,5 +211,6 @@
         return;
 
     this.preencherContato();
+    this.renderHorario();
 
 }
