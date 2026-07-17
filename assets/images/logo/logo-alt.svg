@@ -1,0 +1,11 @@
+<svg width="620" height="160" viewBox="0 0 620 160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="8" width="144" height="144" rx="28" fill="none" stroke="#C89B3C" stroke-width="3"/>
+  <circle cx="80" cy="80" r="52" fill="none" stroke="#C89B3C" stroke-width="3" opacity="0.7"/>
+  <text x="80" y="102" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif"
+        font-size="72" font-weight="700" fill="#C89B3C">R</text>
+
+  <text x="180" y="76" font-family="Georgia, 'Playfair Display', serif"
+        font-size="42" font-weight="700" fill="#FFFFFF">Restaurante</text>
+  <text x="180" y="122" font-family="Georgia, 'Playfair Display', serif"
+        font-size="42" font-weight="700" fill="#C89B3C">Premium</text>
+</svg>
