@@ -3,7 +3,7 @@
     {
       "id": "dep-01",
       "nome": "Ana Carolina Ferreira",
-      "foto": "assets/images/equipe/cliente-ana.webp",
+      "foto": "assets/images/equipe/cliente-ana.jpeg",
       "nota": 5,
       "texto": "Experiência incrível do início ao fim. O atendimento é impecável e o filé ao molho madeira é simplesmente perfeito. Já virou nosso restaurante favorito para datas especiais.",
       "data": "2026-05-12",
@@ -12,7 +12,7 @@
     {
       "id": "dep-02",
       "nome": "Ricardo Souza Almeida",
-      "foto": "assets/images/equipe/cliente-ricardo.webp",
+      "foto": "assets/images/equipe/cliente-ricardo.jpeg",
       "nota": 5,
       "texto": "Ambiente lindo, elegante e muito aconchegante. O risoto de funghi surpreendeu, e o atendimento da equipe foi atencioso do começo ao fim.",
       "data": "2026-04-28",
@@ -21,7 +21,7 @@
     {
       "id": "dep-03",
       "nome": "Beatriz Lima Santos",
-      "foto": "assets/images/equipe/cliente-beatriz.webp",
+      "foto": "assets/images/equipe/cliente-beatriz.jpeg",
       "nota": 4,
       "texto": "Comida maravilhosa e drinks muito bem preparados. Só demorou um pouco mais para servir a sobremesa, mas nada que tenha comprometido a experiência.",
       "data": "2026-04-02",
@@ -30,7 +30,7 @@
     {
       "id": "dep-04",
       "nome": "Marcelo Oliveira Costa",
-      "foto": "assets/images/equipe/cliente-marcelo.webp",
+      "foto": "assets/images/equipe/cliente-marcelo.jpeg",
       "nota": 5,
       "texto": "Levamos clientes importantes para jantar e o restaurante superou as expectativas. Sofisticado, saboroso e com um serviço de altíssimo nível.",
       "data": "2026-03-19",
@@ -39,7 +39,7 @@
     {
       "id": "dep-05",
       "nome": "Juliana Pereira Rocha",
-      "foto": "assets/images/equipe/cliente-juliana.webp",
+      "foto": "assets/images/equipe/cliente-juliana.jpeg",
       "nota": 5,
       "texto": "Celebramos nosso aniversário de casamento aqui e foi tudo perfeito, desde a decoração da mesa até o cuidado dos garçons com cada detalhe.",
       "data": "2026-02-14",
