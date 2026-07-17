@@ -310,3 +310,18 @@ min-height:320px;
 }
 
 }
+
+html,
+body{
+
+overflow-x:hidden;
+
+}
+
+.container{
+
+max-width:100%;
+
+overflow:hidden;
+
+}
