@@ -373,15 +373,21 @@
 
 .contact-value{
 
-    color:#fff;
+display:block;
 
-    font-size:1.08rem;
+color:#F5F5F5;
 
-    line-height:1.6;
+font-size:1rem;
 
-    text-decoration:none;
+font-weight:500;
 
-    transition:.3s;
+line-height:1.7;
+
+word-break:break-word;
+
+text-decoration:none;
+
+margin:0;
 
 }
 
@@ -393,9 +399,13 @@
 
 .contact-small{
 
-    color:#BDBDBD;
+margin:2px 0;
 
-    line-height:1.6;
+font-size:.92rem;
+
+line-height:1.6;
+
+color:#A9A9A9;
 
 }
 
